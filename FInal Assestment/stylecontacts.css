@@ -1,0 +1,34 @@
+.Menu
+{
+    margin-left: auto;
+    background: linear-gradient(90deg, #4b6cb7 10%, #7ebfe4 30%, #182848 60%);
+}
+
+.nav_resume
+{
+    padding:20px;
+}
+
+.nav_resume:hover{
+    background-color: black;
+}
+
+ul
+  {  
+    list-style: none;
+    margin-right: auto;
+  }
+
+  li
+  {
+      font-style: italic;
+      display: inline-block;
+      padding: 10px 20px;
+  }
+
+  nav a{
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylecontacts.css" type= text/css>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+</head>
+<body id="top">
+    <nav class="Menu">
+        <ul>
+            <li class="nav_resume"><a href="main.html">Home</a></li>
+            <li class="nav_resume"><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>
+      Please gladly fill up to form , then select any one of those options below.
+    </p>
+    <form id="submissionForm" action="https://formspree.io/f/mwkyknpk" method="post">
+      <div class="col-md-6">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" name="name" autofocus class="form-control" id="fullName" required tabindex="1">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="_replyto" class="form-control" autocomplete="email" id="email" placeholder="Please Enter your email" required tabindex="2">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" name="address" class="form-control" autocomplete="street-address" id="address" required tabindex="3">
+        <div class="valid-feedback">
+          Valid Address
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" name="city" class="form-control" autocomplete="address-level2" id="city" required tabindex="4">
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="postal-code" class="form-label">Postal Code</label>
+        <input type="text" name="postalcode" class="form-control" id="postal-code" autocomplete="postal-code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" placeholder="M5W 1E6" required tabindex="5">
+        <div class="invalid-feedback">
+          Please provide a valid Postal Code.
+        </div>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="options" id="question" tabindex="6" onclick="optiondiv(0)" checked tabindex="6">
+        <label class="form-check-label" for="question">
+          Question
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="options" id="comment" tabindex="7" onclick="optiondiv(1)" tabindex="7">
+        <label class="form-check-label" for="comment">
+          Comment
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="options" id="hiring" tabindex="8" onclick="optiondiv(2)" tabindex="8">
+        <label class="form-check-label" for="hiring">
+          Hiring
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="form-group col" id="description1">
+          <label for="feedback-file">Question:</label>
+          <textarea
+            id="question"
+            class="form-control"
+            name="question"
+            rows="5"
+            tabindex="9"
+            placeholder="Any questions?"
+          ></textarea>
+        </div>
+        <div class="rows">
+          <div class="form-group col" id="description2">
+            <label for="feedback-file">Comment:</label>
+            <textarea
+              id="comment"
+              class="form-control"
+              name="comment"
+              rows="5"
+              tabindex="10"
+              placeholder="Leave a comment"
+            ></textarea>
+          </div>
+        </div>
+      <div class="rows" id="description3">
+        <select class="form-select" aria-label="Default select example" onchange="calculateAmount(this.value)" >
+          <option disabled selected> Choose career</option>
+          <option value="32.00">Software Engineer: $32.00/hr</option>
+            <option value="37.00">Web Designer: $37.00/hr</option>
+            <option value="39">Program Analyst: $39.00/hr</option>
+            <option value="40">Interactive Developer: $40.00/hr</option>
+        </select>
+        <div class="input-group mb-3">
+          <span class="input-group-text">$ Estimated monthly pay:</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="rates" readonly>
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      <div class="d-flex flex-row-reverse mt-3" >
+        <input class="btn btn-secondary mr-3" type="reset" name="reset" value="Reset" tabindex="12" id="button1">
+        <input class="btn btn-primary" type="submit" name="submit" value="Submit" tabindex="11" id="button2">
+        
+      </div>
+     
+      </div>
+    </form>
+  </div>
+</body>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>

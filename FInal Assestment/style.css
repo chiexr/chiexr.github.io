@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@200&display=swap');
+
+#top
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+  
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:10px;
+}
+
+*
+{
+    padding:0;
+    margin:0;
+}
+  .profile
+  {
+     width: 100%;
+     height: 100vh;
+     background-image: url('background.jpg');
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content:center ;
+     text-align: center;
+     color: white;
+  }
+
+  .image
+  {
+      width: 500px;     
+      background-color: rgba(0,0,0,0);
+      padding: 30px 0;
+      border-radius: 10%;
+  }
+
+  img
+  {
+      height: 250px;
+      border-radius: 10%;
+      margin-bottom: 10px;
+  }
+
+  i
+  {
+      color: white;
+  }
+
+  .profileinfo h2
+  {
+      font-size: 2em;
+      font-weight: 500;
+      
+  }
+  
+  .profile h3
+  {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .profileinfo
+  {
+      margin-bottom: 10px;
+  }
+
+  .honesty
+  {
+     padding-bottom: 10px;
+     margin-top: 20px;
+  }
+  button
+  {
+    padding: 9px 25px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0088;
+  }
+
+  li,a,button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size:14px;
+    color:#edf0f1;
+    text-decoration: none;
+  }
+
+  h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+    color:aliceblue;
+   
+  }
+ 
+  ul
+  {  
+    list-style: none;
+    margin-right: auto;
+  }
+
+  li
+  {
+      display: inline-block;
+      padding: 10px 20px;
+  }
+
+  .SocialLinks
+  {
+    margin-bottom: 10px;
+  }
+
+
+.logoprof
+{
+    margin:10px;
+    height: 100px;
+
+}
+
+.profnav
+{
+    display: flex;
+    align-items: center;
+    padding:30px 5%;
+}
+
+.Menu
+{
+    margin-left: auto;
+}
+
+.nav_resume
+{
+    padding:20px;
+}
+
+.nav_resume:hover{
+    background-color: #0088a9;
+    border-radius: 30%;
+}
+
+
+.chie
+{
+    font-family:Verdana, Geneva, Tahoma, sans-;
+    background-color:saddlebrown;
+    padding-inline: 20px;
+    border-style:groove;
+}
+
+#aboutme
+{
+    background-image: url('office.jpg');
+    background-size: cover;
+    background-blend-mode:darken;
+    background-position: 20px;
+    display: flex;
+    margin-bottom: 30px;
+}
+#aboutme p
+{
+    font-weight:700;
+    margin: 70px;
+}
+
+#aboutme strong
+{
+    font-weight:bolder;
+    color: #edf0f1;
+}
+
+.basicinfo p
+{
+   padding: 90px;
+}
+
+#education em
+{
+    font-size: small;
+    font-variant:small-caps;
+}
+.edtable {
+    float:left;
+    width: 30%;
+    padding: 20px;
+    padding-left:80px;
+    padding-right:80px;
+    padding-bottom:30px;
+    height: 100px;
+    margin:40px;
+    margin-right:10px;
+    margin-bottom: 20px;
+    background-color:white;
+    border-radius: 10%;
+  }
+
+  .edtable td
+  {
+    display: flex;
+  }
+
+  .edtable h2
+  {
+      color:#24252A
+  }
+
+
+em
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (max-width: 720px){
+    header{
+        margin:10px;
+        background-color: black;
+    }
+    body{
+        margin:0;
+        width:100%;
+    }
+    header, main{
+        max-width:100%;
+    }
+    .edtable {
+        float: left;
+        width: 30%;
+        padding-left:80px;
+        padding-right:80px;
+        padding-bottom:30px;
+        height: 100px;
+        margin:40px;
+        margin-right:10px;
+        margin-bottom: 20px;
+        background-color:white;
+        border-radius: 10%;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:840px){
+    header{
+        margin:20px;
+        background-color: blue;
+    }
+    body{
+        margin:5px;
+        width:100%;
+        background-color:black;
+    }
+    header, main{
+        max-width:100%;
+    }
+    .profile
+    {
+        background-size: cover;
+    }
+    .edtable {
+        padding-left:80px;
+        padding-right:80px;
+        padding-bottom:30px;
+        height: 100px;
+        margin:40px;
+        margin-right:10px;
+        margin-bottom: 20px;
+        background-color:white;
+        border-radius: 10%;
+    }
+
+}
+
+.honestly p
+{
+    color:white ;
+    float:left;
+    width: 30%;
+    
+}
+
+#reflection h2
+{
+    text-align: center;
+}
+
+#reflection p
+{
+    color:white ;
+}
+
+hr
+{
+ height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
